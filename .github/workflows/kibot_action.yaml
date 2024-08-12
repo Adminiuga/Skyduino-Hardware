@@ -227,6 +227,7 @@ jobs:
             print_sch print_pdf
             board_top board_top_filled
             board_bottom board_bottom_filled
+            pcb_diff sch_diff
 
     - name: Upload Docs
       if: always()
