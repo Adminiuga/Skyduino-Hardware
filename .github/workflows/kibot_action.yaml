@@ -84,8 +84,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      with:
-        fetch_depth: 0
 
     - name: Run PreFlight checks
       uses: INTI-CMNB/KiBot@v2_k8
@@ -218,6 +216,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - uses: INTI-CMNB/KiBot@v2_k8
       with:
