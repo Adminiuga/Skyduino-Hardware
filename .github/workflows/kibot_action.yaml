@@ -226,8 +226,8 @@ jobs:
         schema: ${{ env.SCHEMA_FILE }}
         board: ${{ env.PCB_FILE }}
         skip: erc,drc
-        additional_args: "-E DIFF_OLD=${{ env.DIFF_OLD }}"
         targets: >-
+            -E DIFF_OLD='${{ env.DIFF_OLD }}'
             print_sch print_pdf
             board_top board_top_filled
             board_bottom board_bottom_filled
