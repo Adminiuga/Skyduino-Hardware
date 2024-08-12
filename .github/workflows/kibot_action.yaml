@@ -58,6 +58,10 @@ on:
         type: boolean
 
   push:
+    branches:
+      - dev
+      - main
+    tags:
     paths:
       - '*.kicad_sch'
       - '*.kicad_pcb'
