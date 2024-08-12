@@ -228,7 +228,7 @@ jobs:
         skip: erc,drc
         verbose: ${{ vars.VERBOSE_LEVEL != '' && vars.VERBOSE_LEVEL || 0 }}
         targets: >-
-            -E DIFF_OLD='${{ env.DIFF_OLD }}'
+            -E DIFF_OLD='origin/${{ env.DIFF_OLD }}'
             print_sch print_pdf
             board_top board_top_filled
             board_bottom board_bottom_filled
