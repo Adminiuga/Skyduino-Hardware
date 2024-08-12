@@ -310,6 +310,3 @@ outputs:
       cache_dir: .kicache
       only_different: true
       pcb: false
-
-definitions:
-  DIFF_OLD: 'KIBOT_LAST-1'
