@@ -241,6 +241,18 @@ jobs:
         name: Doc
         path: ${{ env.OUTPUT_DIR }}
 
+    - name: Upload PCB Diff
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        path: ${{ env.OUTPUT_DIR }}/Diff/*diff_pcb.pdf
+
+    - name: Upload Schematic Diff
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        path: ${{ env.OUTPUT_DIR }}/Diff/*diff_sch.pdf
+
 
   Blender:
     name: 3d HQ Rendering
