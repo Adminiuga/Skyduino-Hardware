@@ -26,6 +26,9 @@ filters:
     negative_bottom: false
     mirror_bottom: true
 
+definitions:
+  DIFF_OLD: KIBOT_LAST-1
+
 preflight:
   check_zone_fills: true
   erc: true
@@ -297,7 +300,7 @@ outputs:
     type: diff
     dir: Diff
     options:
-      old: KIBOT_LAST-1
+      old: '@DIFF_OLD@'
       cache_dir: .kicache
       only_different: true
       pcb: true
@@ -306,7 +309,7 @@ outputs:
     type: diff
     dir: Diff
     options:
-      old: KIBOT_LAST-1
+      old: '@DIFF_OLD@'
       cache_dir: .kicache
       only_different: true
       pcb: false

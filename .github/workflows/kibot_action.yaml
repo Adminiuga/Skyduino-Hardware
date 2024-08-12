@@ -75,6 +75,7 @@ env:
   SCHEMA_FILE: SkyDuino-Hardware.kicad_sch
   PCB_FILE: SkyDuino-Hardware.kicad_pcb
   OUTPUT_DIR: output
+  DIFF_OLD: ${{ github.event_name == 'pull_request' && github.base_ref || 'KIBOT_LAST-1'}}
 
 
 jobs:
@@ -83,6 +84,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch_depth: 0
 
     - name: Run PreFlight checks
       uses: INTI-CMNB/KiBot@v2_k8
@@ -223,6 +226,7 @@ jobs:
         schema: ${{ env.SCHEMA_FILE }}
         board: ${{ env.PCB_FILE }}
         skip: erc,drc
+        additional_args: "-E DIFF_OLD=${{ env.DIFF_OLD }}"
         targets: >-
             print_sch print_pdf
             board_top board_top_filled
