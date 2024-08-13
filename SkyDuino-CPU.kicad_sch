@@ -12766,7 +12766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/clock_z_x_e-3044365.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406051011_Shenzhen-SCTF-Elec-SX2M20-000B10F20TNN_C7431315.pdf"
 			(at 96.52 58.42 0)
 			(effects
 				(font
@@ -12784,7 +12784,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1857136"
+		(property "LCSC" "C7431315"
 			(at 92.71 62.23 0)
 			(effects
 				(font
@@ -12793,7 +12793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser p/n" "346-2520Z20.C15X"
+		(property "Mouser p/n" ""
 			(at 92.71 62.23 0)
 			(effects
 				(font
@@ -12802,7 +12802,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer p/n" "2520Z20.C15X"
+		(property "Manufacturer p/n" "SX2M20.000B10F20TNN"
+			(at 92.71 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" ""
 			(at 92.71 62.23 0)
 			(effects
 				(font
