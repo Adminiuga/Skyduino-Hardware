@@ -3,7 +3,7 @@ name: "Draft Release notes"
 # Controls when the action will run.
 on:
   pull_request:
-    types: [opened, reopened, synchronize, closed]
+    types: [opened, reopened, synchronize, closed, labeled]
 
 permissions:
   contents: read
